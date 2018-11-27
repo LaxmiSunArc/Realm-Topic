@@ -71,7 +71,7 @@ class TodoListVc: UIViewController {
         
         todoItems = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
         
-//      tableView.reloadData()
+      tableView.reloadData()
         
     }
     
