@@ -84,6 +84,7 @@ extension CategoryVc: UITableViewDelegate,UITableViewDataSource{
             if let category = categories?[indexPath.row] {
                 try! DB.shared.realm.write {
                     DB.shared.realm.delete(category)
+                    self.tableView.reloadData()
                 }
                 tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
             }
@@ -100,19 +101,7 @@ extension CategoryVc: UITableViewDelegate,UITableViewDataSource{
     }
     
     
-   func updateModel(at indexPath: IndexPath) {
-        
-        if let categoryForDeletion = self.categories?[indexPath.row] {
-            do {
-                DB.shared.realm.delete(categoryForDeletion)
-                self.tableView.reloadData()
-                
-            } catch {
-                print("Error deleting category, \(error)")
-            }
-        }
-    }
-    
+   
   
     
 }
