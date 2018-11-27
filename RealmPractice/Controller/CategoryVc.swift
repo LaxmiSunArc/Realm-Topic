@@ -84,9 +84,9 @@ extension CategoryVc: UITableViewDelegate,UITableViewDataSource{
             if let category = categories?[indexPath.row] {
                 try! DB.shared.realm.write {
                     DB.shared.realm.delete(category)
-                    self.tableView.reloadData()
+                    
                 }
-                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+                self.tableView.reloadData()
             }
         }
     }
