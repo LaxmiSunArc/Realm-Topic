@@ -1,0 +1,31 @@
+{
+    "name": "canteen1",
+    "lines": [
+        {
+            "name": "line1",
+            "meals": [
+                {
+                    "name": "chicken2",
+                    "isVegan": false
+                },
+                {
+                    "name": "egges",
+                    "isVegan": false
+                }
+            ]
+        },
+        {
+            "name": "line2",
+            "meals": [
+                {
+                    "name": "chicken",
+                    "isVegan": true
+                },
+                {
+                    "name": "egges",
+                    "isVegan": true
+                }
+            ]
+        }
+    ]
+}
