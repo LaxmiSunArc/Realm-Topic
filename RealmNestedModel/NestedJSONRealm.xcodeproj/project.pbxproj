@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91D96A77C22C65806B87808B /* Pods_NestedJSONRealmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FDD81D9EEEBF21FD573F6D /* Pods_NestedJSONRealmUITests.framework */; };
+		C16EA5FCCE359C131001732C /* Pods_NestedJSONRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224BAA2727115D6B44369F2F /* Pods_NestedJSONRealm.framework */; };
+		ED86070A21B526510042DDB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86070921B526510042DDB9 /* AppDelegate.swift */; };
+		ED86070C21B526510042DDB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86070B21B526510042DDB9 /* ViewController.swift */; };
+		ED86070F21B526510042DDB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED86070D21B526510042DDB9 /* Main.storyboard */; };
+		ED86071121B5265E0042DDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED86071021B5265E0042DDB9 /* Assets.xcassets */; };
+		ED86071421B5265E0042DDB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED86071221B5265E0042DDB9 /* LaunchScreen.storyboard */; };
+		ED86086721B541300042DDB9 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86086621B541300042DDB9 /* DB.swift */; };
+		ED86086A21B541530042DDB9 /* RealmExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86086921B541530042DDB9 /* RealmExt.swift */; };
+		ED86086C21B5439B0042DDB9 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86086B21B5439B0042DDB9 /* Menu.swift */; };
+		ED86086E21B543B10042DDB9 /* MenuExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86086D21B543B10042DDB9 /* MenuExt.swift */; };
+		ED86087121B544820042DDB9 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86087021B544820042DDB9 /* Http.swift */; };
+		F458023D19F06A0001E75D0C /* Pods_NestedJSONRealmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0604DC00CE3AA783B226157 /* Pods_NestedJSONRealmTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED86071B21B5265E0042DDB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED8606FE21B526510042DDB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED86070521B526510042DDB9;
+			remoteInfo = NestedJSONRealm;
+		};
+		ED86072621B5265E0042DDB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED8606FE21B526510042DDB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED86070521B526510042DDB9;
+			remoteInfo = NestedJSONRealm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0471137FC0A13183C124643B /* Pods-NestedJSONRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedJSONRealm.release.xcconfig"; path = "Pods/Target Support Files/Pods-NestedJSONRealm/Pods-NestedJSONRealm.release.xcconfig"; sourceTree = "<group>"; };
+		224BAA2727115D6B44369F2F /* Pods_NestedJSONRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NestedJSONRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59026D31BD8A75906AC6BE43 /* Pods-NestedJSONRealmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedJSONRealmUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NestedJSONRealmUITests/Pods-NestedJSONRealmUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F662DB54AF5194612DB05DA /* Pods-NestedJSONRealmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedJSONRealmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NestedJSONRealmUITests/Pods-NestedJSONRealmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6191FE9791AF71D63772FF5B /* Pods-NestedJSONRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedJSONRealm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NestedJSONRealm/Pods-NestedJSONRealm.debug.xcconfig"; sourceTree = "<group>"; };
+		7552FDC49AA2152B8B990209 /* Pods-NestedJSONRealmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedJSONRealmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NestedJSONRealmTests/Pods-NestedJSONRealmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0604DC00CE3AA783B226157 /* Pods_NestedJSONRealmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NestedJSONRealmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED86070621B526510042DDB9 /* NestedJSONRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedJSONRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED86070921B526510042DDB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED86070B21B526510042DDB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED86070E21B526510042DDB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED86071021B5265E0042DDB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED86071321B5265E0042DDB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED86071521B5265E0042DDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED86071A21B5265E0042DDB9 /* NestedJSONRealmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedJSONRealmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED86072521B5265E0042DDB9 /* NestedJSONRealmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedJSONRealmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED86086621B541300042DDB9 /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		ED86086921B541530042DDB9 /* RealmExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExt.swift; sourceTree = "<group>"; };
+		ED86086B21B5439B0042DDB9 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		ED86086D21B543B10042DDB9 /* MenuExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuExt.swift; sourceTree = "<group>"; };
+		ED86087021B544820042DDB9 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		F2FDD81D9EEEBF21FD573F6D /* Pods_NestedJSONRealmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NestedJSONRealmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F984D07D185530EE4BEBCCD0 /* Pods-NestedJSONRealmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedJSONRealmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NestedJSONRealmTests/Pods-NestedJSONRealmTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED86070321B526510042DDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16EA5FCCE359C131001732C /* Pods_NestedJSONRealm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED86071721B5265E0042DDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F458023D19F06A0001E75D0C /* Pods_NestedJSONRealmTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED86072221B5265E0042DDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D96A77C22C65806B87808B /* Pods_NestedJSONRealmUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16132B2C2463400A817EF163 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				224BAA2727115D6B44369F2F /* Pods_NestedJSONRealm.framework */,
+				B0604DC00CE3AA783B226157 /* Pods_NestedJSONRealmTests.framework */,
+				F2FDD81D9EEEBF21FD573F6D /* Pods_NestedJSONRealmUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BC6C7EAAA37497B195194FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6191FE9791AF71D63772FF5B /* Pods-NestedJSONRealm.debug.xcconfig */,
+				0471137FC0A13183C124643B /* Pods-NestedJSONRealm.release.xcconfig */,
+				7552FDC49AA2152B8B990209 /* Pods-NestedJSONRealmTests.debug.xcconfig */,
+				F984D07D185530EE4BEBCCD0 /* Pods-NestedJSONRealmTests.release.xcconfig */,
+				5F662DB54AF5194612DB05DA /* Pods-NestedJSONRealmUITests.debug.xcconfig */,
+				59026D31BD8A75906AC6BE43 /* Pods-NestedJSONRealmUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED8606FD21B526510042DDB9 = {
+			isa = PBXGroup;
+			children = (
+				ED86070821B526510042DDB9 /* NestedJSONRealm */,
+				ED86070721B526510042DDB9 /* Products */,
+				7BC6C7EAAA37497B195194FD /* Pods */,
+				16132B2C2463400A817EF163 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED86070721B526510042DDB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED86070621B526510042DDB9 /* NestedJSONRealm.app */,
+				ED86071A21B5265E0042DDB9 /* NestedJSONRealmTests.xctest */,
+				ED86072521B5265E0042DDB9 /* NestedJSONRealmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED86070821B526510042DDB9 /* NestedJSONRealm */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4DB6621B63CC000A62435 /* API */,
+				ED86086F21B543C30042DDB9 /* Model */,
+				ED86086821B541360042DDB9 /* RealmDB */,
+				ED86070921B526510042DDB9 /* AppDelegate.swift */,
+				ED86070B21B526510042DDB9 /* ViewController.swift */,
+				ED86070D21B526510042DDB9 /* Main.storyboard */,
+				ED86071021B5265E0042DDB9 /* Assets.xcassets */,
+				ED86071221B5265E0042DDB9 /* LaunchScreen.storyboard */,
+				ED86071521B5265E0042DDB9 /* Info.plist */,
+			);
+			path = NestedJSONRealm;
+			sourceTree = "<group>";
+		};
+		ED86086821B541360042DDB9 /* RealmDB */ = {
+			isa = PBXGroup;
+			children = (
+				ED86086621B541300042DDB9 /* DB.swift */,
+				ED86086921B541530042DDB9 /* RealmExt.swift */,
+			);
+			path = RealmDB;
+			sourceTree = "<group>";
+		};
+		ED86086F21B543C30042DDB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED86086B21B5439B0042DDB9 /* Menu.swift */,
+				ED86086D21B543B10042DDB9 /* MenuExt.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDF4DB6621B63CC000A62435 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ED86087021B544820042DDB9 /* Http.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED86070521B526510042DDB9 /* NestedJSONRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED86072E21B5265E0042DDB9 /* Build configuration list for PBXNativeTarget "NestedJSONRealm" */;
+			buildPhases = (
+				0ED9592121C610A49DA83195 /* [CP] Check Pods Manifest.lock */,
+				ED86070221B526510042DDB9 /* Sources */,
+				ED86070321B526510042DDB9 /* Frameworks */,
+				ED86070421B526510042DDB9 /* Resources */,
+				220AFE727C401C667BEFBC36 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NestedJSONRealm;
+			productName = NestedJSONRealm;
+			productReference = ED86070621B526510042DDB9 /* NestedJSONRealm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED86071921B5265E0042DDB9 /* NestedJSONRealmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED86073121B5265E0042DDB9 /* Build configuration list for PBXNativeTarget "NestedJSONRealmTests" */;
+			buildPhases = (
+				8163D52755B761C998DD69DD /* [CP] Check Pods Manifest.lock */,
+				ED86071621B5265E0042DDB9 /* Sources */,
+				ED86071721B5265E0042DDB9 /* Frameworks */,
+				ED86071821B5265E0042DDB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED86071C21B5265E0042DDB9 /* PBXTargetDependency */,
+			);
+			name = NestedJSONRealmTests;
+			productName = NestedJSONRealmTests;
+			productReference = ED86071A21B5265E0042DDB9 /* NestedJSONRealmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED86072421B5265E0042DDB9 /* NestedJSONRealmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED86073421B5265E0042DDB9 /* Build configuration list for PBXNativeTarget "NestedJSONRealmUITests" */;
+			buildPhases = (
+				6EE6C5912DA87B75C8A82A98 /* [CP] Check Pods Manifest.lock */,
+				ED86072121B5265E0042DDB9 /* Sources */,
+				ED86072221B5265E0042DDB9 /* Frameworks */,
+				ED86072321B5265E0042DDB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED86072721B5265E0042DDB9 /* PBXTargetDependency */,
+			);
+			name = NestedJSONRealmUITests;
+			productName = NestedJSONRealmUITests;
+			productReference = ED86072521B5265E0042DDB9 /* NestedJSONRealmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED8606FE21B526510042DDB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Anand Suthar";
+				TargetAttributes = {
+					ED86070521B526510042DDB9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					ED86071921B5265E0042DDB9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = ED86070521B526510042DDB9;
+					};
+					ED86072421B5265E0042DDB9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = ED86070521B526510042DDB9;
+					};
+				};
+			};
+			buildConfigurationList = ED86070121B526510042DDB9 /* Build configuration list for PBXProject "NestedJSONRealm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED8606FD21B526510042DDB9;
+			productRefGroup = ED86070721B526510042DDB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED86070521B526510042DDB9 /* NestedJSONRealm */,
+				ED86071921B5265E0042DDB9 /* NestedJSONRealmTests */,
+				ED86072421B5265E0042DDB9 /* NestedJSONRealmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED86070421B526510042DDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED86071421B5265E0042DDB9 /* LaunchScreen.storyboard in Resources */,
+				ED86071121B5265E0042DDB9 /* Assets.xcassets in Resources */,
+				ED86070F21B526510042DDB9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED86071821B5265E0042DDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED86072321B5265E0042DDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ED9592121C610A49DA83195 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NestedJSONRealm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		220AFE727C401C667BEFBC36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NestedJSONRealm/Pods-NestedJSONRealm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NestedJSONRealm/Pods-NestedJSONRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EE6C5912DA87B75C8A82A98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NestedJSONRealmUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8163D52755B761C998DD69DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NestedJSONRealmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED86070221B526510042DDB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED86086E21B543B10042DDB9 /* MenuExt.swift in Sources */,
+				ED86070C21B526510042DDB9 /* ViewController.swift in Sources */,
+				ED86070A21B526510042DDB9 /* AppDelegate.swift in Sources */,
+				ED86086721B541300042DDB9 /* DB.swift in Sources */,
+				ED86086A21B541530042DDB9 /* RealmExt.swift in Sources */,
+				ED86086C21B5439B0042DDB9 /* Menu.swift in Sources */,
+				ED86087121B544820042DDB9 /* Http.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED86071621B5265E0042DDB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED86072121B5265E0042DDB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED86071C21B5265E0042DDB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED86070521B526510042DDB9 /* NestedJSONRealm */;
+			targetProxy = ED86071B21B5265E0042DDB9 /* PBXContainerItemProxy */;
+		};
+		ED86072721B5265E0042DDB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED86070521B526510042DDB9 /* NestedJSONRealm */;
+			targetProxy = ED86072621B5265E0042DDB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED86070D21B526510042DDB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED86070E21B526510042DDB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED86071221B5265E0042DDB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED86071321B5265E0042DDB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED86072C21B5265E0042DDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED86072D21B5265E0042DDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED86072F21B5265E0042DDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6191FE9791AF71D63772FF5B /* Pods-NestedJSONRealm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5AR757G56;
+				INFOPLIST_FILE = NestedJSONRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunarc.NestedJSONRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED86073021B5265E0042DDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0471137FC0A13183C124643B /* Pods-NestedJSONRealm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5AR757G56;
+				INFOPLIST_FILE = NestedJSONRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunarc.NestedJSONRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED86073221B5265E0042DDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7552FDC49AA2152B8B990209 /* Pods-NestedJSONRealmTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestedJSONRealmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunarc.NestedJSONRealmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NestedJSONRealm.app/NestedJSONRealm";
+			};
+			name = Debug;
+		};
+		ED86073321B5265E0042DDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F984D07D185530EE4BEBCCD0 /* Pods-NestedJSONRealmTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestedJSONRealmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunarc.NestedJSONRealmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NestedJSONRealm.app/NestedJSONRealm";
+			};
+			name = Release;
+		};
+		ED86073521B5265E0042DDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F662DB54AF5194612DB05DA /* Pods-NestedJSONRealmUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestedJSONRealmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunarc.NestedJSONRealmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NestedJSONRealm;
+			};
+			name = Debug;
+		};
+		ED86073621B5265E0042DDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59026D31BD8A75906AC6BE43 /* Pods-NestedJSONRealmUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestedJSONRealmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sunarc.NestedJSONRealmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NestedJSONRealm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED86070121B526510042DDB9 /* Build configuration list for PBXProject "NestedJSONRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED86072C21B5265E0042DDB9 /* Debug */,
+				ED86072D21B5265E0042DDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED86072E21B5265E0042DDB9 /* Build configuration list for PBXNativeTarget "NestedJSONRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED86072F21B5265E0042DDB9 /* Debug */,
+				ED86073021B5265E0042DDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED86073121B5265E0042DDB9 /* Build configuration list for PBXNativeTarget "NestedJSONRealmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED86073221B5265E0042DDB9 /* Debug */,
+				ED86073321B5265E0042DDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED86073421B5265E0042DDB9 /* Build configuration list for PBXNativeTarget "NestedJSONRealmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED86073521B5265E0042DDB9 /* Debug */,
+				ED86073621B5265E0042DDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED8606FE21B526510042DDB9 /* Project object */;
+}
