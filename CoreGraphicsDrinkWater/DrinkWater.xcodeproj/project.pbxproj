@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		ED0959E921DB93FF00B6529E /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0959E821DB93FF00B6529E /* GraphView.swift */; };
 		ED0F1AE421DCD824003E20D0 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F1AE321DCD824003E20D0 /* BackgroundView.swift */; };
+		ED4941AD21DE0B1E0022FA68 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4941AC21DE0B1E0022FA68 /* NextButton.swift */; };
 		ED5AE83021DB4E7D002B332E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AE82F21DB4E7D002B332E /* AppDelegate.swift */; };
 		ED5AE83221DB4E7D002B332E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AE83121DB4E7D002B332E /* ViewController.swift */; };
 		ED5AE83521DB4E7D002B332E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5AE83321DB4E7D002B332E /* Main.storyboard */; };
@@ -16,11 +17,16 @@
 		ED5AE83A21DB4E90002B332E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5AE83821DB4E90002B332E /* LaunchScreen.storyboard */; };
 		ED5AE84221DB66D5002B332E /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AE84121DB66D5002B332E /* PushButton.swift */; };
 		ED5AE84421DB7B28002B332E /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AE84321DB7B28002B332E /* Counter.swift */; };
+		ED78259221DE303100BBC5E6 /* BackgroundSecnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78259121DE303100BBC5E6 /* BackgroundSecnd.swift */; };
+		ED78259421DE377A00BBC5E6 /* thirdBD.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78259321DE377A00BBC5E6 /* thirdBD.swift */; };
+		ED78259621DE378C00BBC5E6 /* ForthBD.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78259521DE378C00BBC5E6 /* ForthBD.swift */; };
+		ED78259821DE3E3B00BBC5E6 /* fifthBD.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78259721DE3E3B00BBC5E6 /* fifthBD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED0959E821DB93FF00B6529E /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		ED0F1AE321DCD824003E20D0 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		ED4941AC21DE0B1E0022FA68 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		ED5AE82C21DB4E7D002B332E /* DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5AE82F21DB4E7D002B332E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED5AE83121DB4E7D002B332E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +36,10 @@
 		ED5AE83B21DB4E90002B332E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED5AE84121DB66D5002B332E /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 		ED5AE84321DB7B28002B332E /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		ED78259121DE303100BBC5E6 /* BackgroundSecnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSecnd.swift; sourceTree = "<group>"; };
+		ED78259321DE377A00BBC5E6 /* thirdBD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdBD.swift; sourceTree = "<group>"; };
+		ED78259521DE378C00BBC5E6 /* ForthBD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthBD.swift; sourceTree = "<group>"; };
+		ED78259721DE3E3B00BBC5E6 /* fifthBD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthBD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,11 @@
 				ED5AE84321DB7B28002B332E /* Counter.swift */,
 				ED0959E821DB93FF00B6529E /* GraphView.swift */,
 				ED0F1AE321DCD824003E20D0 /* BackgroundView.swift */,
+				ED78259121DE303100BBC5E6 /* BackgroundSecnd.swift */,
+				ED4941AC21DE0B1E0022FA68 /* NextButton.swift */,
+				ED78259321DE377A00BBC5E6 /* thirdBD.swift */,
+				ED78259521DE378C00BBC5E6 /* ForthBD.swift */,
+				ED78259721DE3E3B00BBC5E6 /* fifthBD.swift */,
 			);
 			path = DrinkWater;
 			sourceTree = "<group>";
@@ -149,10 +164,15 @@
 			files = (
 				ED0F1AE421DCD824003E20D0 /* BackgroundView.swift in Sources */,
 				ED0959E921DB93FF00B6529E /* GraphView.swift in Sources */,
+				ED78259421DE377A00BBC5E6 /* thirdBD.swift in Sources */,
 				ED5AE84421DB7B28002B332E /* Counter.swift in Sources */,
 				ED5AE83221DB4E7D002B332E /* ViewController.swift in Sources */,
 				ED5AE83021DB4E7D002B332E /* AppDelegate.swift in Sources */,
+				ED78259221DE303100BBC5E6 /* BackgroundSecnd.swift in Sources */,
+				ED4941AD21DE0B1E0022FA68 /* NextButton.swift in Sources */,
 				ED5AE84221DB66D5002B332E /* PushButton.swift in Sources */,
+				ED78259621DE378C00BBC5E6 /* ForthBD.swift in Sources */,
+				ED78259821DE3E3B00BBC5E6 /* fifthBD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
